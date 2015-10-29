@@ -6,14 +6,6 @@ using System.Text;
 
 namespace DataBean
 {
-
-    public enum BoxState
-    {
-        [Description("离线")]
-        OffLine = 0,
-        [Description("在线")]
-        OnLine = 1
-    }
     /// <summary>
     /// 靶箱的设置内容
     /// </summary>

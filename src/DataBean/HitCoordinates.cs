@@ -18,7 +18,7 @@ namespace DataBean
         /// <summary>
         /// 变换后的点
         /// </summary>
-        public PointF Transform { get; }
+        public PointF Transform { get; set; }
         /// <summary>
         /// 是否命中
         /// </summary>
