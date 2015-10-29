@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Target Name="半身靶" Height="1.0" Width="0.5" ImageWidth="600" ImageHeight="1200" Image="00.bmp">
+  <CenterPoint X="300" Y="600"/>
+  <Layers>
+    <Layer File="04.bmp" Value="4" />
+    <Layer File="05.bmp" Value="5" />
+    <Layer File="06.bmp" Value="6" />
+    <Layer File="07.bmp" Value="7" />
+    <Layer File="08.bmp" Value="8" />
+    <Layer File="09.bmp" Value="9" />
+    <Layer File="10.bmp" Value="10" />
+  </Layers>
+</Target>
