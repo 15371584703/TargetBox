@@ -7,8 +7,8 @@
     <ProjectGuid>{AEB8CAFF-2C70-4F3F-A307-3E36F1278769}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test</RootNamespace>
-    <AssemblyName>Test</AssemblyName>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainFrame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,6 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,6 +83,22 @@
     <ProjectReference Include="..\..\src\BSEWindowsForms\BSE.Windows.Forms.csproj">
       <Project>{9CA367B8-0B98-49D1-84FB-735E612E3BA9}</Project>
       <Name>BSE.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\DataBean\DataBean.csproj">
+      <Project>{5392a91e-b3dc-40a2-add7-b498d38340c9}</Project>
+      <Name>DataBean</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Logic\Logic.csproj">
+      <Project>{5ba190df-1b43-4e4b-b971-4ac56dbcd0cb}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\PicLib\PicLib.csproj">
+      <Project>{89AE8266-B60B-4942-97DE-8B7468924187}</Project>
+      <Name>PicLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Utils\Utils.csproj">
+      <Project>{be9ca2ae-f976-432b-b24b-1c285bd3f198}</Project>
+      <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

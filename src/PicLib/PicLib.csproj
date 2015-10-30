@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE9CA2AE-F976-432B-B24B-1C285BD3F198}</ProjectGuid>
+    <ProjectGuid>{89AE8266-B60B-4942-97DE-8B7468924187}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Utils</RootNamespace>
-    <AssemblyName>Utils</AssemblyName>
+    <RootNamespace>PicLib</RootNamespace>
+    <AssemblyName>PicLib</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,9 +41,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ImageUtils.cs" />
-    <Compile Include="ValueDictionary.cs" />
+    <Compile Include="BaseContorl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseContorl.Designer.cs">
+      <DependentUpon>BaseContorl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Equpment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Equpment.Designer.cs">
+      <DependentUpon>Equpment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TargetImgSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TargetImgSelect.Designer.cs">
+      <DependentUpon>TargetImgSelect.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseContorl.resx">
+      <DependentUpon>BaseContorl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equpment.resx">
+      <DependentUpon>Equpment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetImgSelect.resx">
+      <DependentUpon>TargetImgSelect.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BSEWindowsForms\BSE.Windows.Forms.csproj">
+      <Project>{9ca367b8-0b98-49d1-84fb-735e612e3ba9}</Project>
+      <Name>BSE.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataBean\DataBean.csproj">
+      <Project>{5392a91e-b3dc-40a2-add7-b498d38340c9}</Project>
+      <Name>DataBean</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{5ba190df-1b43-4e4b-b971-4ac56dbcd0cb}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{be9ca2ae-f976-432b-b24b-1c285bd3f198}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

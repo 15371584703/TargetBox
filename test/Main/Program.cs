@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Logic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Test
+namespace Main
 {
     static class Program
     {
@@ -16,6 +17,14 @@ namespace Test
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Global.BasePath = AppDomain.CurrentDomain.BaseDirectory + "..\\data\\";
+            Global.ResourcePath = Global.BasePath + "Resource\\";
+            Global.SettingsPath = Global.BasePath + "Settings\\";
+            Global.TargetImagesPath = Global.BasePath + "TargetImages\\";
+
+            DataManager.Init();
+
             Application.Run(new Mainform());
         }
     }
