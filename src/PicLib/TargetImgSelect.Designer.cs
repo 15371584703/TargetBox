@@ -97,7 +97,7 @@
             this.lable_name.Name = "lable_name";
             this.lable_name.Size = new System.Drawing.Size(361, 31);
             this.lable_name.TabIndex = 5;
-            this.lable_name.Text = "靶子";
+            this.lable_name.Text = "靶标";
             this.lable_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TargetImgSelect

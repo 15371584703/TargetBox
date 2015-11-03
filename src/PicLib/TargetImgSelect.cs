@@ -94,9 +94,13 @@ namespace PicLib
             {
                 btn_Next_Click(sender, new EventArgs());
             }
-            else
+            else if (e.X - downX < 0)
             { 
                 btn_previous_Click(sender, new EventArgs());
+            }
+            else
+            {
+
             }
         }
         #endregion

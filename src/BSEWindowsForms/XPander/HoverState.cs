@@ -7,7 +7,7 @@ namespace BSE.Windows.Forms
 	/// <summary>
 	/// Specifies constants that define the hoverstate at the captionbar or a part of it on a Panel or XPanderPanel.
 	/// </summary>
-    /// <copyright>Copyright © 2008 Uwe Eichkorn
+    /// <copyright>Copyright ?2008 Uwe Eichkorn
     /// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
     /// KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
     /// IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR

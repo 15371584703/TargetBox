@@ -20,7 +20,7 @@ namespace DataBean
     public class TargetBox
     {
         //靶箱编号
-        public String Number { get; set; }
+        public int Number { get; set; }
         //靶箱状态
         public BoxState State { get; set; }
         //靶标
@@ -29,5 +29,12 @@ namespace DataBean
         public BoxSettings Settings { get; set; }
         //命中点
         public List<HitCoordinates> HitList;
+
+
+        public TargetBox(int number) 
+        {
+            this.Number = number;
+        }
+
     }
 }

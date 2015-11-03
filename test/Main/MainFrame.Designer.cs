@@ -49,8 +49,16 @@
             this.equpment2 = new PicLib.Equpment();
             this.equpment1 = new PicLib.Equpment();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.selecter1 = new PicLib.Selecter();
+            this.train1 = new PicLib.Train();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
             this.panel_bottom = new System.Windows.Forms.Panel();
             this.panel_top.SuspendLayout();
             this.panel_main.SuspendLayout();
@@ -58,6 +66,8 @@
             this.tabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_top
@@ -80,9 +90,9 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 26);
+            this.label1.Size = new System.Drawing.Size(575, 26);
             this.label1.TabIndex = 2;
-            this.label1.Text = "射击训练分析系统V1.0";
+            this.label1.Text = "射击技术分析系统";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btn_min
@@ -277,6 +287,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.selecter1);
+            this.tabPage2.Controls.Add(this.train1);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
@@ -285,6 +297,23 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "训练";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // selecter1
+            // 
+            this.selecter1.Location = new System.Drawing.Point(6, 6);
+            this.selecter1.Margin = new System.Windows.Forms.Padding(4);
+            this.selecter1.Name = "selecter1";
+            this.selecter1.Size = new System.Drawing.Size(563, 446);
+            this.selecter1.TabIndex = 1;
+            // 
+            // train1
+            // 
+            this.train1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.train1.Location = new System.Drawing.Point(2, 2);
+            this.train1.Margin = new System.Windows.Forms.Padding(4);
+            this.train1.Name = "train1";
+            this.train1.Size = new System.Drawing.Size(1382, 712);
+            this.train1.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -299,6 +328,12 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.label72);
+            this.tabPage4.Controls.Add(this.label69);
+            this.tabPage4.Controls.Add(this.label71);
+            this.tabPage4.Controls.Add(this.label70);
+            this.tabPage4.Controls.Add(this.label68);
+            this.tabPage4.Controls.Add(this.label66);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
@@ -307,6 +342,65 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "关于";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(177, 131);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(17, 16);
+            this.label72.TabIndex = 14;
+            this.label72.Text = "©";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("SimHei", 12F);
+            this.label69.Location = new System.Drawing.Point(191, 131);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(296, 16);
+            this.label69.TabIndex = 13;
+            this.label69.Text = " 2015 A.T.T 浩潼科技。保留所有权利。";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("SimHei", 12F);
+            this.label71.Location = new System.Drawing.Point(104, 131);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(72, 16);
+            this.label71.TabIndex = 12;
+            this.label71.Text = "版本所有";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("SimHei", 12F);
+            this.label70.Location = new System.Drawing.Point(246, 101);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(40, 16);
+            this.label70.TabIndex = 11;
+            this.label70.Text = "1.01";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("SimHei", 12F);
+            this.label68.Location = new System.Drawing.Point(104, 101);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(136, 16);
+            this.label68.TabIndex = 10;
+            this.label68.Text = "射击技术分析系统";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("SimHei", 15F);
+            this.label66.Location = new System.Drawing.Point(18, 14);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(89, 20);
+            this.label66.TabIndex = 9;
+            this.label66.Text = "关于产品";
             // 
             // panel_bottom
             // 
@@ -338,6 +432,9 @@
             this.tabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -367,5 +464,13 @@
         private PicLib.Equpment equpment4;
         private PicLib.Equpment equpment3;
         private PicLib.Equpment equpment2;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label66;
+        private PicLib.Train train1;
+        private PicLib.Selecter selecter1;
     }
 }

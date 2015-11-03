@@ -36,19 +36,9 @@ namespace PicLib
                 //TODO:
 
                 Image i = Image.FromFile(obj.FilePath);
-
-                if (i.Height / i.Width < 1)
-                {
-                    int picturex = 205 * i.Height / i.Width;
-                    i = ImageUtils.GetThumbnail(i, picturex, 205);
-                }
-                else
-                {
-                    int picturex = 315 * i.Width / i.Height;
-                    i = ImageUtils.GetThumbnail(i, 315, picturex);
-                }
-
                 PicBox_TargetImg.Image = i;
+                PicBox_TargetImg.SizeMode = PictureBoxSizeMode.Zoom;
+                lable_TargetName.Text = obj.TargetName;
             }
         }
     }

@@ -1,29 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dictionary>
-  <Topic Name="Target">
+  <Topic Name="Targets">
     <Item Name="1">胸环靶</Item>
-    <Item Name="2">头靶</Item>
     <Item Name="3">侧身靶</Item>
     <Item Name="4">保龄球靶</Item>
-    <Item Name="5">全身靶</Item>
     <Item Name="6">五环靶</Item>
-    <Item Name="7">有效部位靶</Item>
     <Item Name="8">半身靶</Item>
   </Topic>
-  <Topic Name="Emode">
+  <Topic Name="TrainType">
     <Item Name="1">瞄靶训练</Item>
     <Item Name="2">射击训练</Item>
     <Item Name="3">反应训练</Item>
   </Topic>
-  <Topic Name="Gunmode">
+  <Topic Name="LaserMode">
     <Item Name="1">长发模式</Item>
     <Item Name="2">瞬发模式</Item>
   </Topic>
-  <Topic Name="Shoottype">
+  <Topic Name="LightType">
     <Item Name="1">日间</Item>
     <Item Name="2">夜间</Item>
   </Topic>
-  <Topic Name="Shootmode">
+  <Topic Name="BulletType">
     <Item Name="1">单发</Item>
     <Item Name="2">双发</Item>
   </Topic>

@@ -10,7 +10,7 @@ namespace BSE.Windows.Forms
     /// <summary>
     /// Provides <see cref="Color"/> structures that are colors of a Panel or XPanderPanel display element.
     /// </summary>
-    /// <copyright>Copyright © 2006-2008 Uwe Eichkorn
+    /// <copyright>Copyright ?2006-2008 Uwe Eichkorn
     /// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
     /// KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
     /// IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
